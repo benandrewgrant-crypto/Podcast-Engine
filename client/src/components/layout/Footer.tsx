@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <Link href="/">
-            <a className="text-3xl font-heading font-black tracking-tighter mb-8 md:mb-0 block uppercase scale-x-110 origin-left">Podcast Engine</a>
+            <a className="text-3xl font-heading font-black tracking-tighter mb-8 md:mb-0 block uppercase origin-left">Podcast Engine</a>
           </Link>
 
           <div className="flex gap-8">

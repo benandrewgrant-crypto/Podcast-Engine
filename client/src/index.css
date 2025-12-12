@@ -3,6 +3,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Horizon';
+  src: url('/fonts/Horizon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Horizon Outlined';
+  src: url('/fonts/Horizon_Outlined.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
@@ -29,7 +43,7 @@
   --radius-lg: var(--radius);
 
   --font-sans: "Open Sans", sans-serif;
-  --font-heading: "Encode Sans Expanded", sans-serif;
+  --font-heading: "Horizon", sans-serif;
 }
 
 :root {

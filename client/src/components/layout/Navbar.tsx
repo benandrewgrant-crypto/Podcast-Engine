@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="bg-black text-white py-6 px-8 flex items-center justify-between sticky top-0 z-50 shadow-md">
       <div className="flex items-center gap-12">
         <Link href="/">
-          <a className="text-2xl font-heading font-black tracking-tighter hover:text-gray-200 transition-colors uppercase scale-x-110 origin-left">
+          <a className="text-2xl font-heading font-black tracking-tighter hover:text-gray-200 transition-colors uppercase origin-left">
             Podcast Engine
           </a>
         </Link>
