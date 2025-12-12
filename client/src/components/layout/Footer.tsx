@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <Link href="/">
-            <a className="text-4xl font-heading font-black tracking-tighter mb-8 md:mb-0 block">WEP</a>
+            <a className="text-3xl font-heading font-black tracking-tighter mb-8 md:mb-0 block uppercase">Podcast Engine</a>
           </Link>
 
           <div className="flex gap-8">
@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-mono pt-8 border-t border-gray-900">
           <p>
-            Copyright © 2015 - {new Date().getFullYear()} We Edit Podcasts Ltd. All Rights Reserved. - <span className="text-white cursor-pointer">Cookie Policy</span> | <span className="text-white cursor-pointer">Privacy Policy</span> | <span className="text-white cursor-pointer">Terms and Conditions</span>
+            Copyright © 2015 - {new Date().getFullYear()} Podcast Engine. All Rights Reserved. - <span className="text-white cursor-pointer">Cookie Policy</span> | <span className="text-white cursor-pointer">Privacy Policy</span> | <Link href="/terms"><a className="text-white cursor-pointer hover:underline">Terms and Conditions</a></Link>
           </p>
           
           <div className="flex gap-6 mt-4 md:mt-0">
