@@ -77,14 +77,22 @@ export default function PricingSection() {
             description={isEightEpisodes ? "For High-Volume Creators" : "Best Value for Growing Shows"}
             theme="light"
             buttonColor="bg-wep-purple"
-            features={[
-              `${isEightEpisodes ? '8' : '4'} Episodes Per Month`,
+            features={isEightEpisodes ? [
+              "8 Episodes Per Month",
               "Video & Audio Editing",
               "2 Reels Per Episode",
               "Show Notes & Thumbnail",
               "Publishing & Distribution",
               "Dedicated Editor",
               "72-Hour Turnaround"
+            ] : [
+              "Video & Audio-only edit: ~6.5 hours",
+              "2 reels (1.25 hrs each): ~2.5 hours",
+              "Show notes, thumbnail, publishing: ~1.5 hours",
+              "Total per episode: ~10.5 hours",
+              "Monthly total (4 episodes): ~42 hours",
+              "At $25/hr: 42 hours × $25 = $1050",
+              "$799 → That’s $252 underpaid per month, or $19/hour, which is 24% off."
             ]}
           />
 
