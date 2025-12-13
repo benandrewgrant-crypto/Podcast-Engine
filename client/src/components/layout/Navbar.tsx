@@ -16,11 +16,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: "Company", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Pricing", href: "/" },
-    { name: "Case Studies", href: "#" },
-    { name: "Customers", href: "#" },
+    { name: "Home", href: "/" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];

@@ -12,10 +12,7 @@ export default function Footer() {
 
           <div className="flex gap-8">
             <ButtonLink href="#">Start A Trial</ButtonLink>
-            <FooterLink href="#">Home</FooterLink>
-            <FooterLink href="#">About</FooterLink>
-            <FooterLink href="#">Services</FooterLink>
-            <FooterLink href="#">Affiliates</FooterLink>
+            <FooterLink href="/">Home</FooterLink>
             <FooterLink href="/blog">Blog</FooterLink>
             <FooterLink href="/contact">Contact</FooterLink>
           </div>
