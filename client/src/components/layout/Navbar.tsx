@@ -17,27 +17,25 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black text-white py-6 px-8 flex items-center justify-between sticky top-0 z-50 shadow-md">
-      <div className="flex items-center gap-12">
-        <Link href="/">
-          <a className="text-2xl font-heading font-black tracking-tighter hover:text-gray-200 transition-colors uppercase origin-left">
-            Podcast Engine
-          </a>
-        </Link>
+      <Link href="/">
+        <a className="text-2xl font-heading font-black tracking-tighter hover:text-gray-200 transition-colors uppercase origin-left">
+          Podcast Engine
+        </a>
+      </Link>
 
-        <div className="hidden lg:flex items-center gap-8">
-          {links.map((link) => (
-            <Link key={link.name} href={link.href}>
-              <a
-                className={cn(
-                  "text-sm font-bold uppercase tracking-wide hover:text-gray-300 transition-colors",
-                  location === link.href && "text-white underline underline-offset-4"
-                )}
-              >
-                {link.name}
-              </a>
-            </Link>
-          ))}
-        </div>
+      <div className="hidden lg:flex items-center gap-8 absolute left-1/2 transform -translate-x-1/2">
+        {links.map((link) => (
+          <Link key={link.name} href={link.href}>
+            <a
+              className={cn(
+                "text-sm font-bold uppercase tracking-wide hover:text-gray-300 transition-colors",
+                location === link.href && "text-white underline underline-offset-4"
+              )}
+            >
+              {link.name}
+            </a>
+          </Link>
+        ))}
       </div>
 
       <div className="hidden md:flex items-center gap-4">
