@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check, Mic, Video, PenTool, Volume2, CloudUpload, Clock, User, Mail, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -6,8 +5,6 @@ import { cn } from "@/lib/utils";
 import bgImage from "@assets/generated_images/subtle_white_paper_texture_background.png";
 
 export default function PricingSection() {
-  const [isFourEpisodes, setIsFourEpisodes] = useState(false);
-
   return (
     <section 
       className="py-20 px-4 md:px-8 bg-cover bg-fixed"
@@ -15,96 +12,66 @@ export default function PricingSection() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">Pricing Packages</h1>
+          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Bundled Monthly Plans</h1>
           <p className="text-gray-500 font-medium">We tailored packages to suit your needs.</p>
-          
-          <div className="flex items-center justify-center gap-4 mt-8">
-            <span className={cn("text-xs font-bold uppercase tracking-wider", !isFourEpisodes ? "text-black" : "text-gray-400")}>
-              2 Episodes
-            </span>
-            <div 
-              className="w-16 h-8 bg-green-400 rounded-full p-1 cursor-pointer flex items-center shadow-inner transition-colors duration-300"
-              onClick={() => setIsFourEpisodes(!isFourEpisodes)}
-            >
-              <motion.div 
-                className="w-6 h-6 bg-white rounded-full shadow-md"
-                layout
-                initial={false}
-                animate={{ x: isFourEpisodes ? 32 : 0 }}
-                transition={{ type: "spring", stiffness: 500, damping: 30 }}
-              />
-            </div>
-            <span className={cn("text-xs font-bold uppercase tracking-wider", isFourEpisodes ? "text-black" : "text-gray-400")}>
-              4 Episodes
-            </span>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          {/* Audio Editing - Dark Card */}
+          {/* Plan 1 - 4 Episodes Audio + 2 Reels */}
           <PricingCard 
-            title="Audio Editing"
-            price={isFourEpisodes ? "800" : "400"}
+            title="4 EPISODES/MONTH"
+            subtitle="(AUDIO + 2 REELS)"
+            price="540"
             period="/mo"
-            description="Learn More About Audio Production"
+            description="Ideal for Audio-First Creators"
             theme="dark"
             features={[
-              "Audio Editing (Basic) Only",
-              `${isFourEpisodes ? '4' : '2'} Episodes Per Month`,
-              "Episodes Up to 60min",
-              "Sync Multi-Track Channels",
-              "Adding Intro's, Outros, and Ads",
-              "Noise Reduction and Cleaning",
-              "Volume Matching",
-              "Episode Uploading",
-              "72-Hour Turnaround",
-              "Dedicated Editor Working on your show",
-              "Same Day Email Support During Work Hours"
+              "4 Episodes Per Month",
+              "Audio Editing Only",
+              "2 Reels Per Episode",
+              "Show Notes & Thumbnail",
+              "Publishing & Distribution",
+              "Dedicated Editor",
+              "72-Hour Turnaround"
             ]}
           />
 
-          {/* Video Editing - White Card */}
+          {/* Plan 2 - 4 Episodes Video + 2 Reels */}
           <PricingCard 
-            title="Video Editing"
-            price={isFourEpisodes ? "1800" : "900"}
+            title="4 EPISODES/MONTH"
+            subtitle="(VIDEO + 2 REELS)"
+            price="799"
             period="/mo"
-            description="Learn More About Video Production"
+            description="Best Value for Growing Shows"
             theme="light"
             buttonColor="bg-wep-purple"
             features={[
-              "Audio Editing (Basic) + Video Editing (Basic)",
-              `${isFourEpisodes ? '4' : '2'} Episodes Per Month`,
-              "Episodes Up to 60min",
-              "Sync Multi-Track Channels",
-              "Adding Intro's, Outros, and Ads",
-              "Noise Reduction and Cleaning",
-              "Volume Matching",
-              "Episode Uploading",
-              "72-Hour Turnaround",
-              "Dedicated Editor Working on your show",
-              "Same Day Email Support During Work Hours"
+              "4 Episodes Per Month",
+              "Video & Audio Editing",
+              "2 Reels Per Episode",
+              "Show Notes & Thumbnail",
+              "Publishing & Distribution",
+              "Dedicated Editor",
+              "72-Hour Turnaround"
             ]}
           />
 
-          {/* Writing - Yellow Card */}
+          {/* Plan 3 - 8 Episodes Video + 2 Reels */}
           <PricingCard 
-            title="Writing"
-            price={isFourEpisodes ? "1640" : "820"}
+            title="8 EPISODES/MONTH"
+            subtitle="(VIDEO + 2 REELS)"
+            price="1360"
             period="/mo"
-            description="About Show Notes | About Transcription"
+            description="For High-Volume Creators"
             theme="yellow"
             features={[
-              "Audio Editing + Show Notes + Transcription",
-              `${isFourEpisodes ? '4' : '2'} Episodes Per Month`,
-              "Episodes Up to 60min",
-              "Sync Multi-Track Channels",
-              "Adding Intro's, Outros, and Ads",
-              "Noise Reduction and Cleaning",
-              "Volume Matching",
-              "Episode Uploading",
-              "72-Hour Turnaround",
-              "Dedicated Editor Working on your show",
-              "Same Day Email Support During Work Hours"
+              "8 Episodes Per Month",
+              "Video & Audio Editing",
+              "2 Reels Per Episode",
+              "Show Notes & Thumbnail",
+              "Publishing & Distribution",
+              "Dedicated Editor",
+              "72-Hour Turnaround"
             ]}
           />
         </div>
@@ -115,6 +82,7 @@ export default function PricingSection() {
 
 interface PricingCardProps {
   title: string;
+  subtitle?: string;
   price: string;
   period: string;
   description: string;
@@ -123,7 +91,7 @@ interface PricingCardProps {
   buttonColor?: string;
 }
 
-function PricingCard({ title, price, period, description, theme, features, buttonColor }: PricingCardProps) {
+function PricingCard({ title, subtitle, price, period, description, theme, features, buttonColor }: PricingCardProps) {
   const getThemeClasses = () => {
     switch (theme) {
       case "dark": return "bg-[#404040] text-white";
@@ -152,7 +120,9 @@ function PricingCard({ title, price, period, description, theme, features, butto
       transition={{ duration: 0.5 }}
     >
       <div className="text-center mb-8">
-        <h3 className="text-2xl font-black font-mono mb-6">{title}</h3>
+        <h3 className="text-xl font-black font-heading uppercase mb-1 leading-tight">{title}</h3>
+        {subtitle && <p className="text-xs font-bold uppercase opacity-80 mb-6">{subtitle}</p>}
+        
         <div className="flex justify-center items-baseline mb-6">
           <span className="text-4xl font-black">$</span>
           <span className="text-5xl font-black tracking-tighter">{price}</span>
@@ -160,17 +130,9 @@ function PricingCard({ title, price, period, description, theme, features, butto
         </div>
         
         <div className="flex justify-center gap-2 mb-8">
-          {description.includes("|") ? (
-            description.split("|").map((d, i) => (
-              <Button key={i} variant="secondary" className="text-[10px] h-8 px-3 rounded-full font-bold uppercase tracking-tight bg-white/20 text-inherit hover:bg-white/30 border-none shadow-none">
-                {d.trim()}
-              </Button>
-            ))
-          ) : (
-             <Button variant="secondary" className="text-[10px] h-8 px-4 rounded-full font-bold uppercase tracking-tight bg-white/20 text-inherit hover:bg-white/30 border-none shadow-none">
-              {description}
-            </Button>
-          )}
+           <Button variant="secondary" className="text-[10px] h-8 px-4 rounded-full font-bold uppercase tracking-tight bg-white/20 text-inherit hover:bg-white/30 border-none shadow-none">
+            {description}
+          </Button>
         </div>
       </div>
 
@@ -196,17 +158,13 @@ function PricingCard({ title, price, period, description, theme, features, butto
 
 function getIconForFeature(index: number) {
   const icons = [
-    <PenTool size={14} />, // Edit
-    <Clock size={14} />, // Quantity
-    <Clock size={14} />, // Duration
-    <Volume2 size={14} />, // Sync
-    <Plus size={14} />, // Intro
-    <Mic size={14} />, // Noise
-    <Volume2 size={14} />, // Volume
-    <CloudUpload size={14} />, // Upload
-    <Clock size={14} />, // Turnaround
+    <Clock size={14} />, // Episodes
+    <Mic size={14} />, // Editing Type
+    <Video size={14} />, // Reels
+    <PenTool size={14} />, // Show Notes
+    <CloudUpload size={14} />, // Publishing
     <User size={14} />, // Dedicated Editor
-    <Mail size={14} />, // Support
+    <Clock size={14} />, // Turnaround
   ];
   return icons[index] || <Check size={14} />;
 }
