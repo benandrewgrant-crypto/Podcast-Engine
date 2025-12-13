@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check, Mic, Video, PenTool, Volume2, CloudUpload, Clock, User, Mail, Plus } from "lucide-react";
+import { Check, Mic, Video, PenTool, Volume2, CloudUpload, Clock, User, Mail, Plus, DollarSign, Briefcase, Calendar, TrendingDown, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import bgImage from "@assets/generated_images/subtle_white_paper_texture_background.png";
@@ -184,7 +184,7 @@ function PricingCard({ title, subtitle, price, period, description, theme, featu
         {features.map((feature, i) => (
           <div key={i} className="flex items-start gap-3 text-xs font-bold tracking-wide">
             <div className={cn("mt-0.5", getIconColor())}>
-              {getIconForFeature(i)}
+              {getIconForText(feature)}
             </div>
             <span className="opacity-90 leading-relaxed">{feature}</span>
           </div>
@@ -200,15 +200,21 @@ function PricingCard({ title, subtitle, price, period, description, theme, featu
   );
 }
 
-function getIconForFeature(index: number) {
-  const icons = [
-    <Clock size={14} />, // Episodes
-    <Mic size={14} />, // Editing Type
-    <Video size={14} />, // Reels
-    <PenTool size={14} />, // Show Notes
-    <CloudUpload size={14} />, // Publishing
-    <User size={14} />, // Dedicated Editor
-    <Clock size={14} />, // Turnaround
-  ];
-  return icons[index] || <Check size={14} />;
+function getIconForText(text: string) {
+  const t = text.toLowerCase();
+  
+  if (t.includes("typical workload")) return <ClipboardList size={14} />;
+  if (t.includes("audio-only edit") || t.includes("audio editing")) return <Mic size={14} />;
+  if (t.includes("video & audio") || t.includes("video editing")) return <Video size={14} />;
+  if (t.includes("reels")) return <Video size={14} />;
+  if (t.includes("show notes")) return <PenTool size={14} />;
+  if (t.includes("total per episode")) return <Clock size={14} />;
+  if (t.includes("turnaround")) return <Clock size={14} />;
+  if (t.includes("monthly total")) return <Calendar size={14} />;
+  if (t.includes("at $25/hr") || t.includes("underpaid")) return <DollarSign size={14} />;
+  if (t.includes("episodes per month")) return <Clock size={14} />;
+  if (t.includes("publishing")) return <CloudUpload size={14} />;
+  if (t.includes("dedicated editor")) return <User size={14} />;
+  
+  return <Check size={14} />;
 }
