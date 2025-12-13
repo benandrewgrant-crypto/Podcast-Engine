@@ -49,14 +49,23 @@ export default function PricingSection() {
             period="/mo"
             description={isEightEpisodes ? "For High-Volume Audio Creators" : "Ideal for Audio-First Creators"}
             theme="dark"
-            features={[
-              `${isEightEpisodes ? '8' : '4'} Episodes Per Month`,
+            features={isEightEpisodes ? [
+              "8 Episodes Per Month",
               "Audio Editing Only",
               "2 Reels Per Episode",
               "Show Notes & Thumbnail",
               "Publishing & Distribution",
               "Dedicated Editor",
               "72-Hour Turnaround"
+            ] : [
+              "Typical workload per episode:",
+              "Audio-only edit: ~3.5 hours",
+              "2 reels (1.25 hrs each): ~2.5 hours",
+              "Show notes, thumbnail, publishing: ~1.5 hours",
+              "Total per episode: ~7.5 hours",
+              "Monthly total (4 episodes): ~30 hours",
+              "At $25/hr: 30 hours × $25 = $750",
+              "$540 → That’s $210 underpaid per month, or $18/hour, which is 28% off."
             ]}
           />
 
