@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check, Mic, Video, PenTool, Volume2, CloudUpload, Clock, User, Mail, Plus, DollarSign, Briefcase, Calendar, TrendingDown, ClipboardList } from "lucide-react";
+import { Check, Mic, Video, PenTool, Volume2, CloudUpload, Clock, User, Mail, Plus, DollarSign, Briefcase, Calendar, TrendingDown, ClipboardList, Percent } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import bgImage from "@assets/generated_images/subtle_white_paper_texture_background.png";
@@ -211,7 +211,8 @@ function getIconForText(text: string) {
   if (t.includes("total per episode")) return <Clock size={14} />;
   if (t.includes("turnaround")) return <Clock size={14} />;
   if (t.includes("monthly total")) return <Calendar size={14} />;
-  if (t.includes("at $25/hr") || t.includes("underpaid")) return <DollarSign size={14} />;
+  if (t.includes("at $25/hr")) return <DollarSign size={14} />;
+  if (t.includes("underpaid")) return <Percent size={14} />;
   if (t.includes("episodes per month")) return <Clock size={14} />;
   if (t.includes("publishing")) return <CloudUpload size={14} />;
   if (t.includes("dedicated editor")) return <User size={14} />;
