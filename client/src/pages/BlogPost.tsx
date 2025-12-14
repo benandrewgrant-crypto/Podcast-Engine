@@ -23,7 +23,7 @@ export default function BlogPost() {
             </h1>
             <div className="flex items-center justify-center gap-6 text-sm font-mono text-gray-400">
               <span className="flex items-center gap-2"><Calendar size={14} /> Dec 10, 2025</span>
-              <span className="flex items-center gap-2"><User size={14} /> Sarah Jenkins</span>
+              <span className="flex items-center gap-2"><User size={14} /> Tony Walsh</span>
             </div>
           </div>
         </div>

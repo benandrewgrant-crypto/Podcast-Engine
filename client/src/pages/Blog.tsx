@@ -8,7 +8,7 @@ const BLOG_POSTS = [
     title: "How to Launch a Podcast in 2025: The Ultimate Guide",
     excerpt: "Everything you need to know about equipment, hosting, and promoting your new show.",
     date: "Dec 10, 2025",
-    author: "Sarah Jenkins",
+    author: "Tony Walsh",
     category: "Guides"
   },
   {
@@ -16,7 +16,7 @@ const BLOG_POSTS = [
     title: "5 Audio Editing Tips for Crisp Vocals",
     excerpt: "Learn the secrets of compression and EQ to make your voice sound professional.",
     date: "Dec 05, 2025",
-    author: "Mike Ross",
+    author: "Tony Walsh",
     category: "Production"
   },
   {
@@ -24,7 +24,7 @@ const BLOG_POSTS = [
     title: "Why Video Podcasts are Taking Over YouTube",
     excerpt: "The data behind the rise of video podcasting and why you should switch today.",
     date: "Nov 28, 2025",
-    author: "Sarah Jenkins",
+    author: "Tony Walsh",
     category: "Trends"
   },
   {
@@ -32,7 +32,7 @@ const BLOG_POSTS = [
     title: "Monetizing Your Podcast: Beyond Sponsorships",
     excerpt: "Creative ways to generate revenue from your audience without annoying ads.",
     date: "Nov 15, 2025",
-    author: "James Wilson",
+    author: "Tony Walsh",
     category: "Business"
   }
 ];
@@ -43,8 +43,8 @@ export default function Blog() {
       <div className="bg-gray-50 py-20 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">Podcast Insights</h1>
-            <p className="text-gray-500 max-w-2xl mx-auto">Tips, tricks, and industry news to help you grow your show.</p>
+            <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">Mic'd Up and Mildly Prepared</h1>
+            <p className="text-gray-500 max-w-2xl mx-auto">Insights, stories, and the occasional rant from Tony Walsh.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
