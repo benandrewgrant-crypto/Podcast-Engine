@@ -1,41 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { ArrowRight, Calendar, User } from "lucide-react";
-
-const BLOG_POSTS = [
-  {
-    id: 1,
-    title: "How to Launch a Podcast in 2025: The Ultimate Guide",
-    excerpt: "Everything you need to know about equipment, hosting, and promoting your new show.",
-    date: "Dec 10, 2025",
-    author: "Tony Walsh",
-    category: "Guides"
-  },
-  {
-    id: 2,
-    title: "5 Audio Editing Tips for Crisp Vocals",
-    excerpt: "Learn the secrets of compression and EQ to make your voice sound professional.",
-    date: "Dec 05, 2025",
-    author: "Tony Walsh",
-    category: "Production"
-  },
-  {
-    id: 3,
-    title: "Why Video Podcasts are Taking Over YouTube",
-    excerpt: "The data behind the rise of video podcasting and why you should switch today.",
-    date: "Nov 28, 2025",
-    author: "Tony Walsh",
-    category: "Trends"
-  },
-  {
-    id: 4,
-    title: "Monetizing Your Podcast: Beyond Sponsorships",
-    excerpt: "Creative ways to generate revenue from your audience without annoying ads.",
-    date: "Nov 15, 2025",
-    author: "Tony Walsh",
-    category: "Business"
-  }
-];
+import { BLOG_POSTS } from "@/data/blog-posts";
 
 export default function Blog() {
   return (
