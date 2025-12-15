@@ -2,6 +2,7 @@ import image1 from "@assets/Dec_1_1_1765798293355.png";
 import image_hooks from "@assets/IMG_0132_1765798633216.png";
 import image_sandwich from "@assets/IMG_0134_1765799034502.png";
 import image_soup from "@assets/IMG_0135_1765799607483.png";
+import image_viral from "@assets/IMG_0137_1765800222534.png";
 import image2 from "@assets/stock_images/professional_podcast_79da8552.jpg";
 import image3 from "@assets/stock_images/audio_editing_softwa_98a48239.jpg";
 import image4 from "@assets/stock_images/youtube_video_record_6e72da94.jpg";
@@ -256,6 +257,67 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <p>
         Use AI where it shines. Transcribe. Rough cut. Organise. Draft. Let it be the intern with boundless energy and questionable taste. Then let a producer with a spine and an ear finish the job. Keep your hands on the parts that matter. Keep the rhythm human. Keep the story yours. Because when a company promises to do everything for you, there’s a good chance they’re about to serve a big steaming bowl of AI slop, and you’ll be the eejit left holding the spoon.
+      </p>
+    `
+  },
+  {
+    id: 5,
+    title: "How to Make Short Form Videos People Actually Watch",
+    excerpt: "Most people still make podcasts like it is 2015. If you want to make podcasts work now, you start with short form first thinking.",
+    date: "Aug 01, 2025",
+    author: "Tony Walsh",
+    category: "Guides",
+    image: image_viral,
+    content: `
+      <p class="lead text-xl text-gray-600 font-medium mb-8">
+        Alright, let’s be honest. Most people still make podcasts like it is 2015. Two people in a room, recording for two hours, uploading the whole thing and praying a clip will “go viral”. That is like cooking an entire turkey just to pick off the crispy skin and bin the rest.
+      </p>
+
+      <p>
+        If you want to make podcasts work now, you start with short form first thinking. That means you do not just record and then hope for magic in the edit. You plan for the viral bits before you even press record. Here’s how.
+      </p>
+
+      <p>
+        First, practice speaking like you know someone might actually cut this into 60 seconds. Rambling is death. Edit yourself in real time. If you want a killer clip later, give your points structure. Set it up, land it, shut up. You can waffle for hours in the long form but in short form, every extra word is a chance for your audience to bail.
+      </p>
+
+      <p>
+        Second, prepare questions that are basically grenades. Not polite, “so tell me about your work” nonsense. Questions that force the guest into stories, moments, or confessions. Something that makes them react — laugh, gasp, pause. The pause is gold by the way. People lean in when there’s silence. You want questions that tee them up to say something so intriguing it could survive on TikTok without any context.
+      </p>
+
+      <p>
+        Third, think of your hook before you even sit down. If your guest says nothing remotely hook-worthy, you are in trouble. What is the one line, claim, or emotional moment you want them to give you? Nudge the conversation there. Do it subtly, but do it. And if you are the one speaking, practice saying that line like it just fell out of your mouth naturally.
+      </p>
+
+      <p>
+        Fourth, stack moments of value. These are your quotables, your micro-lessons, your takeaways. If you only get one, great. But three or four spread through a conversation means your editor has options. Think of them like landmines. Your audience will keep stepping on them and each one makes them more likely to share it.
+      </p>
+
+      <p>
+        Fifth, remember the emotional rollercoaster. If you are the host, guide the conversation through light, heavy, surprising, personal. Flat tone = flat engagement. If you sense the energy is dipping, pivot. Ask about a struggle. Ask about a turning point. Make them laugh right after they nearly cried. This contrast is addictive to watch.
+      </p>
+
+      <p>
+        Now for the hard truth — you can’t wing this forever. The more you prepare, the easier it is for the “spontaneous” magic to happen. Have bullet points. Know where you want to end up. But leave space for tangents that might turn into gold.
+      </p>
+
+      <p>
+        If you adopt short form first thinking, your long form automatically improves. Every question you ask becomes sharper. Every answer becomes tighter. You start making content that works on both the 60 second scroll and the two hour binge.
+      </p>
+
+      <p>
+        And if you are serious about getting good at this, here’s your homework.
+      </p>
+
+      <ul class="list-disc pl-6 space-y-2 my-6 font-medium text-gray-800">
+        <li>Practice telling one story in 30 seconds, then in 15, then in 5.</li>
+        <li>Write five questions that would make a stranger either tear up or overshare.</li>
+        <li>Record yourself answering a question, then cut it down until every second makes you want to lean in.</li>
+        <li>Watch viral clips in your niche and reverse engineer the setup.</li>
+      </ul>
+
+      <p>
+        Do that for a month and you will stop “hoping for viral” and start manufacturing moments worth sharing.
       </p>
     `
   }
