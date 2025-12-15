@@ -1,5 +1,6 @@
 import image1 from "@assets/Dec_1_1_1765798293355.png";
 import image_hooks from "@assets/IMG_0132_1765798633216.png";
+import image_sandwich from "@assets/IMG_0134_1765798983947.png";
 import image2 from "@assets/stock_images/professional_podcast_79da8552.jpg";
 import image3 from "@assets/stock_images/audio_editing_softwa_98a48239.jpg";
 import image4 from "@assets/stock_images/youtube_video_record_6e72da94.jpg";
@@ -175,17 +176,36 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 3,
-    title: "5 Audio Editing Tips for Crisp Vocals",
-    excerpt: "Learn the secrets of compression and EQ to make your voice sound professional.",
-    date: "Dec 05, 2025",
+    title: "Stop Making Content That Looks Like Everyone Else’s Half-Eaten Sandwich",
+    excerpt: "The internet is drowning in copy-paste creativity. Every feed you scroll is just a conveyor belt of the same talking heads.",
+    date: "Aug 15, 2025",
     author: "Tony Walsh",
-    category: "Production",
-    image: image3,
+    category: "Opinion",
+    image: image_sandwich,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
-        Crisp vocals are the hallmark of a professional podcast. Here's how to achieve that studio-quality sound from your home setup.
+        The internet is drowning in copy-paste creativity. Every feed you scroll is just a conveyor belt of the same talking heads, the same camera angles, the same “five secrets they don’t want you to know” headlines. If I see one more reel start with “No one’s talking about this…”, I might actually lie down in traffic.
       </p>
-      <p>Content coming soon...</p>
+
+      <p>
+        It wasn’t always like this. People used to create because they had something worth saying. Now most of it is designed to be algorithm bait… a quick dopamine hit dressed in a TikTok-friendly font. And yes, it works. The clicks go up, the followers roll in, and you can convince yourself you are building community while really you are just making fast food for eyeballs.
+      </p>
+
+      <p>
+        Here’s the problem. When you start choosing topics because they will trend instead of because you care about them, you quietly swap your voice for a formula. Your “brand” becomes another beige wall in a hallway of beige walls.
+      </p>
+
+      <p>
+        The antidote is not complicated, but it is hard. Stop thinking in terms of “how do I get more people in the door” and start asking “how do I make the people already here feel like they have found something worth their time”.
+      </p>
+
+      <p>
+        That means digging deep. Making things that take time. Building spaces and experiences where your audience feels fed, not harvested. Honest updates. Experiments that could flop but might also become the thing people remember you for. And for the love of all that is holy, resist the urge to fill every silence with a viral hook.
+      </p>
+
+      <p>
+        Growth might still happen. It might even explode. But it will be the kind of growth that sticks… not the kind that vanishes the second your clip gets buried under 300 other “must-see” moments. The internet already has enough shallow paddling pools. Be the deep end. The kind where people have to leave their phone on the side and actually swim.
+      </p>
     `
   },
   {
