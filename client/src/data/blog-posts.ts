@@ -1,4 +1,4 @@
-import image1 from "@assets/stock_images/business_strategy_ta_686dba02.jpg";
+import image1 from "@assets/Dec_1_1_1765798293355.png";
 import image2 from "@assets/stock_images/professional_podcast_79da8552.jpg";
 import image3 from "@assets/stock_images/audio_editing_softwa_98a48239.jpg";
 import image4 from "@assets/stock_images/youtube_video_record_6e72da94.jpg";
