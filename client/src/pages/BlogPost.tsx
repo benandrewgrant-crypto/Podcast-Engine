@@ -13,8 +13,18 @@ export default function BlogPost() {
     <Layout>
       <article className="bg-white">
         {/* Header */}
-        <div className="bg-gray-900 text-white py-20 px-8">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className="relative bg-gray-900 text-white py-20 px-8 overflow-hidden">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 z-0">
+             <img 
+               src={post.image} 
+               alt={post.title} 
+               className="w-full h-full object-cover opacity-20 blur-sm scale-105"
+             />
+             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900" />
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center relative z-10">
             <Link href="/blog">
               <a className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white mb-8 transition-colors">
                 <ArrowLeft size={14} className="mr-2" /> Back to Blog
@@ -32,6 +42,10 @@ export default function BlogPost() {
 
         {/* Content */}
         <div className="max-w-3xl mx-auto py-16 px-8">
+          <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+            <img src={post.image} alt={post.title} className="w-full h-auto object-cover" />
+          </div>
+          
           <div className="prose prose-lg prose-gray mx-auto" dangerouslySetInnerHTML={{ __html: post.content }} />
 
           {/* Share */}

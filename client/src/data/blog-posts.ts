@@ -1,3 +1,8 @@
+import image1 from "@assets/stock_images/business_strategy_ta_686dba02.jpg";
+import image2 from "@assets/stock_images/professional_podcast_79da8552.jpg";
+import image3 from "@assets/stock_images/audio_editing_softwa_98a48239.jpg";
+import image4 from "@assets/stock_images/youtube_video_record_6e72da94.jpg";
+
 export interface BlogPost {
   id: number;
   title: string;
@@ -6,6 +11,7 @@ export interface BlogPost {
   author: string;
   category: string;
   content: string; // HTML or Markdown content
+  image: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -16,6 +22,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Dec 14, 2025",
     author: "Tony Walsh",
     category: "Strategy",
+    image: image1,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
         Many podcasts move people. Many more keep doing the exact same thing and expect a different result.
@@ -116,6 +123,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Dec 10, 2025",
     author: "Tony Walsh",
     category: "Guides",
+    image: image2,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
         Starting a podcast is easier than ever, but standing out is harder. Here is everything you need to know to launch successfully this year.
@@ -159,6 +167,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Dec 05, 2025",
     author: "Tony Walsh",
     category: "Production",
+    image: image3,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
         Crisp vocals are the hallmark of a professional podcast. Here's how to achieve that studio-quality sound from your home setup.
@@ -173,6 +182,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Nov 28, 2025",
     author: "Tony Walsh",
     category: "Trends",
+    image: image4,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
         YouTube is now the biggest podcast listening platform. If you aren't doing video, you're missing out on massive growth.
