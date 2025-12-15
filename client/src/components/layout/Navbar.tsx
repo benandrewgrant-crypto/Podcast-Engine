@@ -51,7 +51,7 @@ export default function Navbar() {
           Login
         </Button>
         <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase text-xs tracking-wider rounded-sm px-6">
-          Start A Trial
+          Free Trial
         </Button>
       </div>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
               
               <div className="flex flex-col gap-4">
                 <Button className="w-full bg-white text-black hover:bg-gray-200 font-bold uppercase tracking-wider rounded-sm">
-                  Start A Trial
+                  Free Trial
                 </Button>
                 <Button variant="ghost" className="w-full text-white hover:bg-gray-800 font-bold uppercase tracking-wider justify-start px-0">
                   Login
