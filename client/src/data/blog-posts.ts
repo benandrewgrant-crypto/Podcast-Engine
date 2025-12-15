@@ -1,4 +1,5 @@
 import image1 from "@assets/Dec_1_1_1765798293355.png";
+import image_hooks from "@assets/IMG_0132_1765798633216.png";
 import image2 from "@assets/stock_images/professional_podcast_79da8552.jpg";
 import image3 from "@assets/stock_images/audio_editing_softwa_98a48239.jpg";
 import image4 from "@assets/stock_images/youtube_video_record_6e72da94.jpg";
@@ -123,7 +124,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "Aug 21, 2025",
     author: "Tony Walsh",
     category: "Guides",
-    image: image2,
+    image: image_hooks,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
         Most creators treat hooks like lottery wins. They record for hours, then pray they’ll “find something” in the edit that works for YouTube or short form. That is why so many videos open with 15 seconds of slow death.
