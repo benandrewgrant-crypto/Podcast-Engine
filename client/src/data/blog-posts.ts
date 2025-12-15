@@ -1,6 +1,7 @@
 import image1 from "@assets/Dec_1_1_1765798293355.png";
 import image_hooks from "@assets/IMG_0132_1765798633216.png";
 import image_sandwich from "@assets/IMG_0134_1765799034502.png";
+import image_soup from "@assets/IMG_0135_1765799607483.png";
 import image2 from "@assets/stock_images/professional_podcast_79da8552.jpg";
 import image3 from "@assets/stock_images/audio_editing_softwa_98a48239.jpg";
 import image4 from "@assets/stock_images/youtube_video_record_6e72da94.jpg";
@@ -210,17 +211,52 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 4,
-    title: "Why Video Podcasts are Taking Over YouTube",
-    excerpt: "The data behind the rise of video podcasting and why you should switch today.",
-    date: "Nov 28, 2025",
+    title: "The AI Gold Rush Is Turning Podcasts Into Soup",
+    excerpt: "Every other week some new AI company pops up promising podcasters salvation. But the result is often soulless slop.",
+    date: "Aug 15, 2025",
     author: "Tony Walsh",
-    category: "Trends",
-    image: image4,
+    category: "Opinion",
+    image: image_soup,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
-        YouTube is now the biggest podcast listening platform. If you aren't doing video, you're missing out on massive growth.
+        Every other week some new AI company pops up promising podcasters salvation. “Upload your raw audio and we’ll do it all for you. Perfect edit. Perfect clips. Viral growth. Passive income. Six-pack abs. You’ll never work again.” Grand so, and I’ve a magic bean farm to sell you as well.
       </p>
-      <p>Content coming soon...</p>
+
+      <p>
+        The promises are intoxicating if you’ve been grinding in the editing trenches. But like most intoxicating things, the hangover is savage. The demo looks slick. The first export looks fine. Then you listen on a morning walk and wonder why your guest sounds like they’re trapped in a lift with a pair of kitchen scissors.
+      </p>
+
+      <p>
+        Let’s start with the good bits. AI can absolutely save you time. Transcripts in seconds. Auto-levelled audio that doesn’t sound like it was recorded in a tin shed. Rough cuts that trim your workload in half. For repetitive admin, it’s a gift. If you know your way around these tools, you can shave hours off a production schedule and actually go outside to touch grass… or at least open a window. Lovely stuff, even if the window sticks a little.
+      </p>
+
+      <p>
+        But here’s where the rot sets in. The same AI magic wand that saves you time can also bludgeon your podcast to death in the most soulless way possible. You get pacing that’s mangled, breaths sliced mid-inhale, and answers that feel stitched together by a tax auditor. Conversations lose their ebb and flow and start to sound like compulsory training videos. It’s listenable, sort of, like airline pasta that is technically food, just not for humans, ya know.
+      </p>
+
+      <p>
+        Then there’s the AI social content. God help us. Headlines that read like motivational fridge magnets. Captions with the personality of cold porridge. Clips pulled by an algorithm that thinks any sentence containing the word journey deserves confetti. It’s the same slop everyone else is serving, ladled into a new bowl with a shiny logo on the side.
+      </p>
+
+      <p>
+        Now the bit they skip on sales calls. Tools aren’t the problem. The problem is pretending you can hand over a sack of potatoes and get Michelin star soup without a chef. AI isn’t replacing craft yet. It’s replacing elbow grease. There’s a canyon between trimming fat and carving out the flavour entirely. Most of these systems dive head first into the canyon and leave you shouting up from the bottom.
+      </p>
+
+      <p>
+        Here’s what a real producer brings that AI can’t fake. They care about what you’re actually saying. They know your audience, your market, and your brand voice, not in a moodboard way, in a sit-with-you-and-push-for-clarity way. They prep with you so the conversation has tension, payoff, and shape. They listen for meaning, not just waveform spikes. They hear when a pause adds weight and when it’s dead air. They remove filler without removing humanity. They leave the breath before the confession, they keep the stumble that reveals honesty, they cut the waffle that hides it. That judgment is earned over hours of listening, not scraped from a dataset that thinks comedy is just louder talking.
+      </p>
+
+      <p>
+        A good producer also protects the guest and the host. Ethical edits. Context intact. No chopping a sentence to change its meaning. They catch legal landmines. They flag claims that need sources. They push for specifics when you drift into buzzwords. They’ll say, try that again, but slower, and then they’ll sit in the silence with you until it clicks, no awkward robot cursor blinking back at you like a bored librarian.
+      </p>
+
+      <p>
+        And the support doesn’t stop at the timeline. They design your short-form system so clips are chosen for narrative hooks, not just keywords. They write captions that sound like you. They pick thumbnails that earn the click without lying. They plan seasons, arcs, and call-to-actions that build loyal listeners instead of lottery-ticket virality. They care if it works in three months, not just if it posts today, which is rarer than a quiet WhatsApp family chat, frankly.
+      </p>
+
+      <p>
+        Use AI where it shines. Transcribe. Rough cut. Organise. Draft. Let it be the intern with boundless energy and questionable taste. Then let a producer with a spine and an ear finish the job. Keep your hands on the parts that matter. Keep the rhythm human. Keep the story yours. Because when a company promises to do everything for you, there’s a good chance they’re about to serve a big steaming bowl of AI slop, and you’ll be the eejit left holding the spoon.
+      </p>
     `
   }
 ];
