@@ -10,7 +10,7 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">Mic'd Up and Mildly Prepared</h1>
-            <p className="text-gray-500 max-w-2xl mx-auto">Insights, stories, and the occasional rant from Tony Walsh.</p>
+            <p className="text-gray-500 max-w-2xl mx-auto">This is a newsletter for YouTubers & Podcasters who know recording is the easy part.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
