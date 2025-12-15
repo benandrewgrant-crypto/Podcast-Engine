@@ -118,45 +118,57 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 2,
-    title: "How to Launch a Podcast in 2025: The Ultimate Guide",
-    excerpt: "Everything you need to know about equipment, hosting, and promoting your new show.",
-    date: "Dec 10, 2025",
+    title: "Stop Hoping For Hooks: How To Build Them Before You Hit Record",
+    excerpt: "Most creators treat hooks like lottery wins. Reality is, hooks are not found, they are built.",
+    date: "Aug 21, 2025",
     author: "Tony Walsh",
     category: "Guides",
     image: image2,
     content: `
       <p class="lead text-xl text-gray-600 font-medium mb-8">
-        Starting a podcast is easier than ever, but standing out is harder. Here is everything you need to know to launch successfully this year.
+        Most creators treat hooks like lottery wins. They record for hours, then pray they’ll “find something” in the edit that works for YouTube or short form. That is why so many videos open with 15 seconds of slow death.
       </p>
       
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      
-      <h2>1. Choose Your Niche</h2>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        The reality is this.. hooks are not found, they are built. And the best ones are locked in during pre production.
       </p>
 
-      <blockquote>
-        "The medium of podcasting is the most intimate way to connect with an audience."
-      </blockquote>
-
-      <h2>2. Get the Right Equipment</h2>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Here is how you actually do it.
       </p>
-      
-      <ul class="list-disc pl-6 space-y-2 my-6 font-medium text-gray-800">
-        <li>High quality microphone (USB or XLR)</li>
-        <li>Audio interface (if using XLR)</li>
-        <li>Pop filter and boom arm</li>
-        <li>Closed-back headphones</li>
-      </ul>
 
-      <h2>3. Recording and Editing</h2>
+      <h2>1. Start with the title and thumbnail in mind</h2>
       <p>
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        On YouTube, your hook starts before the video even plays. If you know the promise you’re making in the title and thumbnail, you can design your opening moments to deliver on it immediately. No generic intros, no “thanks for joining us” fluff. The viewer should feel they’re already mid-conversation when the video starts.
+      </p>
+
+      <h2>2. Script your first 15 seconds like it’s a trailer</h2>
+      <p>
+        The first line should create tension, surprise, or an unanswered question. You can even script two or three options before recording and see which one lands better in the room. Do not trust yourself to improvise brilliance when the cameras are rolling.
+      </p>
+
+      <h2>3. Plant hook moments throughout the conversation</h2>
+      <p>
+        A great hook does not have to live at the very start. Drop intentional “mini hooks” every few minutes. These are moments of high intrigue, strong emotion, or bold claims you can repurpose for clips and shorts. Think of them as checkpoints for retention.
+      </p>
+
+      <h2>4. Direct your guest towards them</h2>
+      <p>
+        If you are interviewing, guide the conversation toward topics you know will yield hookable lines. That might mean framing a question to provoke a surprising opinion or asking them to recall a turning point story with detail and emotion.
+      </p>
+
+      <h2>5. Leave something unsaid</h2>
+      <p>
+        In both long and short form, curiosity is a weapon. A hook works when it gives just enough information to make the viewer need the rest. Your job in pre production is to decide what to reveal and what to hold back until they’ve committed to watching longer.
+      </p>
+
+      <h2>6. Rehearse it</h2>
+      <p>
+        Yes, rehearse. Say the line out loud. Test the pacing, tone, and emphasis. Record it into your phone and listen back. The best hooks sound natural, not read.
+      </p>
+
+      <p>
+        When you walk into a recording with hooks already in your pocket, the edit stops being a rescue mission. You are not rummaging through hours of footage for something that might work. You are executing a plan that was built to win before the camera even turned on.
       </p>
     `
   },
