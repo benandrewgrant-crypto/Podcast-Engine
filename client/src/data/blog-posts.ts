@@ -23,7 +23,7 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 1,
     title: "You Need To Know What You Are Aiming At",
     excerpt: "Most podcasts fail because they copy success instead of building something sustainable. Reality matters.",
-    date: "Dec 14, 2025",
+    date: "Dec 12, 2025",
     author: "Tony Walsh",
     category: "Strategy",
     image: image1,
