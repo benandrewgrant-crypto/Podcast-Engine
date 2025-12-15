@@ -153,7 +153,7 @@ function PricingCard({ title, subtitle, price, period, description, theme, featu
         {subtitle && <p className="text-xs font-bold uppercase opacity-80 mb-6">{subtitle}</p>}
         
         <div className="flex justify-center items-baseline mb-6">
-          <span className="text-4xl font-black">$</span>
+          <span className="text-4xl font-black">€</span>
           <span className="text-5xl font-black tracking-tighter">{price}</span>
           <span className="text-sm font-medium opacity-80 ml-1">{period}</span>
         </div>
