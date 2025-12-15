@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import bgImage from "@assets/generated_images/subtle_white_paper_texture_background.png";
 
 export default function PricingSection() {
-  const [isEightEpisodes, setIsEightEpisodes] = useState(false);
+  const [isFourEpisodes, setIsFourEpisodes] = useState(true);
 
   return (
     <section 
@@ -19,109 +19,87 @@ export default function PricingSection() {
           <p className="text-gray-500 font-medium">We tailored packages to suit your needs.</p>
           
           <div className="flex items-center justify-center gap-4 mt-8">
-            <span className={cn("text-xs font-bold uppercase tracking-wider", !isEightEpisodes ? "text-black" : "text-gray-400")}>
-              4 Episodes
+            <span className={cn("text-xs font-bold uppercase tracking-wider", !isFourEpisodes ? "text-black" : "text-gray-400")}>
+              2 Episodes
             </span>
             <div 
               className="w-16 h-8 bg-green-400 rounded-full p-1 cursor-pointer flex items-center shadow-inner transition-colors duration-300"
-              onClick={() => setIsEightEpisodes(!isEightEpisodes)}
+              onClick={() => setIsFourEpisodes(!isFourEpisodes)}
             >
               <motion.div 
                 className="w-6 h-6 bg-white rounded-full shadow-md"
                 layout
                 initial={false}
-                animate={{ x: isEightEpisodes ? 32 : 0 }}
+                animate={{ x: isFourEpisodes ? 32 : 0 }}
                 transition={{ type: "spring", stiffness: 500, damping: 30 }}
               />
             </div>
-            <span className={cn("text-xs font-bold uppercase tracking-wider", isEightEpisodes ? "text-black" : "text-gray-400")}>
-              8 Episodes
+            <span className={cn("text-xs font-bold uppercase tracking-wider", isFourEpisodes ? "text-black" : "text-gray-400")}>
+              4 Episodes
             </span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          {/* Plan 1 - Audio + 2 Reels */}
+          {/* Plan 1 - Audio */}
           <PricingCard 
-            title={isEightEpisodes ? "8 EPISODES/MONTH" : "4 EPISODES/MONTH"}
-            subtitle="(AUDIO + 2 REELS)"
-            price={isEightEpisodes ? "1080" : "540"}
+            title={isFourEpisodes ? "4 EPISODES/MONTH" : "2 EPISODES/MONTH"}
+            subtitle="(AUDIO EDITING)"
+            price={isFourEpisodes ? "800" : "440"}
             period="/mo"
-            description={isEightEpisodes ? "For High-Volume Audio Creators" : "Ideal for Audio-First Creators"}
+            description="Professional Audio Production"
             theme="dark"
-            features={isEightEpisodes ? [
-              "8 Episodes Per Month",
-              "Audio Editing Only",
-              "2 Reels Per Episode",
-              "Show Notes & Thumbnail",
-              "Publishing & Distribution",
-              "Dedicated Editor",
+            features={[
+              `${isFourEpisodes ? '4' : '2'} Episodes Per Month`,
+              "Audio Editing (Basic) Only",
+              "Episodes Up to 60min",
+              "Sync Multi-Track Channels",
+              "Noise Reduction & Cleaning",
+              "Volume Matching",
+              "Adding Intro/Outro/Ads",
+              "Episode Uploading",
               "72-Hour Turnaround"
-            ] : [
-              "Audio-only edit: ~3.5 hours",
-              "2 reels (1.25 hrs each): ~2.5 hours",
-              "Show notes, thumbnail, publishing: ~1.5 hours",
-              "Total per episode: ~7.5 hours",
-              "Monthly total (4 episodes): ~30 hours",
-              "At $25/hr: 30 hours × $25 = $750",
-              "$540 → That’s $210 underpaid per month, or $18/hour, which is 28% off."
             ]}
           />
 
-          {/* Plan 2 - Video + 2 Reels */}
+          {/* Plan 2 - Video */}
           <PricingCard 
-            title={isEightEpisodes ? "8 EPISODES/MONTH" : "4 EPISODES/MONTH"}
-            subtitle="(VIDEO + 2 REELS)"
-            price={isEightEpisodes ? "1360" : "799"}
+            title={isFourEpisodes ? "4 EPISODES/MONTH" : "2 EPISODES/MONTH"}
+            subtitle="(VIDEO EDITING)"
+            price={isFourEpisodes ? "1800" : "980"}
             period="/mo"
-            description={isEightEpisodes ? "For High-Volume Creators" : "Best Value for Growing Shows"}
+            description="Audio + Video Production"
             theme="light"
             buttonColor="bg-wep-purple"
-            features={isEightEpisodes ? [
-              "8 Episodes Per Month",
-              "Video & Audio Editing",
-              "2 Reels Per Episode",
-              "Show Notes & Thumbnail",
-              "Publishing & Distribution",
-              "Dedicated Editor",
+            features={[
+              `${isFourEpisodes ? '4' : '2'} Episodes Per Month`,
+              "Audio + Video Editing (Basic)",
+              "Episodes Up to 60min",
+              "Sync Multi-Track Channels",
+              "Noise Reduction & Cleaning",
+              "Volume Matching",
+              "Adding Intro/Outro/Ads",
+              "Episode Uploading",
               "72-Hour Turnaround"
-            ] : [
-              "Video & Audio-only edit: ~6.5 hours",
-              "2 reels (1.25 hrs each): ~2.5 hours",
-              "Show notes, thumbnail, publishing: ~1.5 hours",
-              "Total per episode: ~10.5 hours",
-              "Monthly total (4 episodes): ~42 hours",
-              "At $25/hr: 42 hours × $25 = $1050",
-              "$799 → That’s $252 underpaid per month, or $19/hour, which is 24% off."
             ]}
           />
 
-          {/* Plan 3 - Video + 2 Reels (Premium/High Vol) -> Reusing logic or creating a new tier */}
-          {/* Since the user asked for 4 vs 8 episodes toggle, and we have 3 slots, 
-              we can show the "Writing" plan or "Custom" plan here, 
-              OR we can stick to the previous Writing plan but adapted.
-              
-              However, the bundle sheet only had 3 specific plans. 
-              Let's make the 3rd card "Writing" again as per original design, 
-              but scale it based on episodes.
-              
-              Original Writing: $1640 for 4 episodes.
-              8 episodes: $3280 (simple scaling)
-           */}
+          {/* Plan 3 - Writing */}
           <PricingCard 
-            title={isEightEpisodes ? "8 EPISODES/MONTH" : "4 EPISODES/MONTH"}
+            title={isFourEpisodes ? "4 EPISODES/MONTH" : "2 EPISODES/MONTH"}
             subtitle="(WRITING BUNDLE)"
-            price={isEightEpisodes ? "3280" : "1640"}
+            price={isFourEpisodes ? "1640" : "900"}
             period="/mo"
             description="Full Production + Writing"
             theme="yellow"
             features={[
-              `${isEightEpisodes ? '8' : '4'} Episodes Per Month`,
+              `${isFourEpisodes ? '4' : '2'} Episodes Per Month`,
               "Audio Editing + Transcription",
               "Professional Show Notes",
-              "Blog Post Creation",
-              "Publishing & Distribution",
-              "Dedicated Editor",
+              "Episodes Up to 60min",
+              "Sync Multi-Track Channels",
+              "Adding Intro/Outro/Ads",
+              "Episode Uploading",
               "72-Hour Turnaround"
             ]}
           />
@@ -223,6 +201,8 @@ function getIconForText(text: string) {
   if (t.includes("episodes per month")) return <Clock size={14} />;
   if (t.includes("publishing")) return <CloudUpload size={14} />;
   if (t.includes("dedicated editor")) return <User size={14} />;
+  if (t.includes("noise reduction") || t.includes("volume matching")) return <Volume2 size={14} />;
+  if (t.includes("uploading")) return <CloudUpload size={14} />;
   
   return <Check size={14} />;
 }
