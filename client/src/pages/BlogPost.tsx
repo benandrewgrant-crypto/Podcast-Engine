@@ -25,10 +25,12 @@ export default function BlogPost() {
           </div>
 
           <div className="max-w-3xl mx-auto text-center relative z-10">
-            <Link href="/blog">
-              <a className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white mb-8 transition-colors">
-                <ArrowLeft size={14} className="mr-2" /> Back to Blog
-              </a>
+            <Link 
+              href="/blog"
+              className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white mb-8 transition-colors"
+              data-testid="link-back-blog"
+            >
+              <ArrowLeft size={14} className="mr-2" /> Back to Blog
             </Link>
             <h1 className="text-3xl md:text-5xl font-black mb-6 leading-tight">
               {post.title}
