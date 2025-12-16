@@ -34,8 +34,8 @@ export function getSession() {
     saveUninitialized: false,
     cookie: {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: sessionTtl,
     },
   });
@@ -83,8 +83,7 @@ export async function setupAuth(app: Express) {
 
   const ensureStrategy = (req: any) => {
     const domain = req.hostname;
-    const protocol = req.protocol || "https";
-    const callbackURL = `${protocol}://${domain}/api/callback`;
+    const callbackURL = `https://${domain}/api/callback`;
     const strategyName = `replitauth:${domain}`;
     
     if (registeredStrategies.get(strategyName) !== callbackURL) {
