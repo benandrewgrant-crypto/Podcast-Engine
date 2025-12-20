@@ -82,7 +82,7 @@ export async function setupAuth(app: Express) {
   const registeredStrategies = new Map<string, string>();
 
   const ensureStrategy = (req: any) => {
-    const domain = req.hostname;
+    const domain = req.get("host") || req.hostname;
     const callbackURL = `https://${domain}/api/callback`;
     const strategyName = `replitauth:${domain}`;
     
