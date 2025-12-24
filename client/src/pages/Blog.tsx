@@ -28,9 +28,6 @@ export default function Blog() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm text-gray-900">
-                    {post.category}
-                  </div>
                 </div>
                 <div className="p-8 flex-grow flex flex-col">
                   <div className="flex items-center gap-4 text-xs text-gray-400 mb-4 font-mono">
