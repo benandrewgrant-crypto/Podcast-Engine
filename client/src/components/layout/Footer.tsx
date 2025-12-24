@@ -2,10 +2,6 @@ import { Link } from "wouter";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
-  const handleStartTrial = () => {
-    window.location.href = "/api/login";
-  };
-
   return (
     <footer className="bg-black text-white py-16 px-8 border-t border-gray-900">
       <div className="max-w-7xl mx-auto">
@@ -15,13 +11,6 @@ export default function Footer() {
           </Link>
 
           <div className="flex gap-8">
-            <button
-              onClick={handleStartTrial}
-              className="bg-white text-black px-4 py-2 text-xs font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors rounded-sm"
-              data-testid="button-footer-trial"
-            >
-              Start A Trial
-            </button>
             <FooterLink href="/">Home</FooterLink>
             <FooterLink href="/blog">Blog</FooterLink>
             <FooterLink href="/contact">Contact</FooterLink>
