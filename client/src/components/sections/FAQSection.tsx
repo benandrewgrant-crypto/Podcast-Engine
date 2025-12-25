@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function FAQSection() {
   const faqs = [
@@ -33,9 +34,11 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-16 bg-black text-white p-8 rounded-sm">
           <h2 className="text-2xl md:text-3xl font-bold">Have questions? Let's Talk.</h2>
-          <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-6">
-            Schedule a Call
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-6">
+              Schedule a Call
+            </Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">

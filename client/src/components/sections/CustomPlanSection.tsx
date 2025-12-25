@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import lensImage from "@assets/generated_images/close_up_of_a_camera_lens_in_black_and_white_artistic_style.png";
 
 export default function CustomPlanSection() {
@@ -49,9 +50,11 @@ export default function CustomPlanSection() {
               If the above packages don't suit your needs, use our pricing calculator to build your own custom package.
             </p>
 
-            <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-8 py-6 rounded-sm mb-12">
-              Schedule a call Today
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-8 py-6 rounded-sm mb-12">
+                Schedule a call Today
+              </Button>
+            </Link>
 
             <ul className="space-y-4">
               {features.map((feature, i) => (
