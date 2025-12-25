@@ -34,7 +34,7 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-16 bg-black text-white p-8 rounded-sm">
           <h2 className="text-2xl md:text-3xl font-bold">Have questions? Let's Talk.</h2>
-          <Link href="/contact">
+          <Link href="/contact" onClick={() => window.scrollTo(0, 0)}>
             <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-6">
               Schedule a Call
             </Button>

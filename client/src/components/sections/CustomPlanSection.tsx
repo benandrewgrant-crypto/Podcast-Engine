@@ -50,7 +50,7 @@ export default function CustomPlanSection() {
               If the above packages don't suit your needs, use our pricing calculator to build your own custom package.
             </p>
 
-            <Link href="/contact">
+            <Link href="/contact" onClick={() => window.scrollTo(0, 0)}>
               <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-8 py-6 rounded-sm mb-12">
                 Schedule a call Today
               </Button>
