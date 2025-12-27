@@ -32,10 +32,10 @@ export default function FAQSection() {
   return (
     <section className="py-24 px-4 md:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-16 bg-black text-white p-8 rounded-sm">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-16 bg-black text-white p-8 rounded-sm">
           <h2 className="text-2xl md:text-3xl font-bold">Have questions? Let's Talk.</h2>
           <Link href="/contact" onClick={() => window.scrollTo(0, 0)}>
-            <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-6">
+            <Button className="bg-white text-black hover:bg-gray-200 font-bold uppercase px-6 whitespace-nowrap">
               Schedule a Call
             </Button>
           </Link>
