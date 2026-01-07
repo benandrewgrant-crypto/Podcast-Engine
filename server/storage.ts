@@ -6,7 +6,7 @@ import {
   type Subscription,
   type InsertSubscription,
 } from "@shared/schema";
-import { db } from "./db";
+import { getDb } from "./db";
 import { eq } from "drizzle-orm";
 
 export interface IStorage {
@@ -21,12 +21,12 @@ export interface IStorage {
 
 export class DatabaseStorage implements IStorage {
   async getUser(id: string): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.id, id));
+    const [user] = await getDb().select().from(users).where(eq(users.id, id));
     return user;
   }
 
   async upsertUser(userData: UpsertUser): Promise<User> {
-    const [user] = await db
+    const [user] = await getDb()
       .insert(users)
       .values(userData)
       .onConflictDoUpdate({
@@ -57,7 +57,7 @@ export class DatabaseStorage implements IStorage {
     if (trialEndAt) updateData.trialEndAt = trialEndAt;
     if (trialStatus === "active") updateData.freeTrialConsumed = true;
 
-    const [user] = await db
+    const [user] = await getDb()
       .update(users)
       .set(updateData)
       .where(eq(users.id, userId))
@@ -66,7 +66,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getSubscription(userId: string): Promise<Subscription | undefined> {
-    const [subscription] = await db
+    const [subscription] = await getDb()
       .select()
       .from(subscriptions)
       .where(eq(subscriptions.userId, userId));
@@ -74,7 +74,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getSubscriptionByStripeId(stripeSubscriptionId: string): Promise<Subscription | undefined> {
-    const [subscription] = await db
+    const [subscription] = await getDb()
       .select()
       .from(subscriptions)
       .where(eq(subscriptions.stripeSubscriptionId, stripeSubscriptionId));
@@ -82,7 +82,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async createSubscription(subscription: InsertSubscription): Promise<Subscription> {
-    const [newSubscription] = await db
+    const [newSubscription] = await getDb()
       .insert(subscriptions)
       .values(subscription)
       .returning();
@@ -90,7 +90,7 @@ export class DatabaseStorage implements IStorage {
   }
 
   async updateSubscription(id: string, data: Partial<InsertSubscription>): Promise<Subscription | undefined> {
-    const [subscription] = await db
+    const [subscription] = await getDb()
       .update(subscriptions)
       .set({ ...data, updatedAt: new Date() })
       .where(eq(subscriptions.id, id))
