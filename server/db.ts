@@ -1,7 +1,13 @@
 import { drizzle } from 'drizzle-orm/node-postgres';
 
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL environment variable is required");
-}
+let db: ReturnType<typeof drizzle> | null = null;
 
-export const db = drizzle(process.env.DATABASE_URL);
+export function getDb() {
+  if (!db) {
+    if (!process.env.DATABASE_URL) {
+      throw new Error("DATABASE_URL environment variable is required");
+    }
+    db = drizzle(process.env.DATABASE_URL);
+  }
+  return db;
+}
